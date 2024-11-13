@@ -1,0 +1,14 @@
+.minimap {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr); /* 40 columns for the grid */
+  width: 160px; /* Set the width of the minimap */
+  height: 120px; /* Set the height of the minimap */
+
+  margin: 16px;
+  margin-left: 0px;
+}
+
+.minimap-pixel {
+  /* Optional: border for individual pixels */
+  box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}

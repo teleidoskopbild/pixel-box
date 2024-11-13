@@ -1,0 +1,35 @@
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem; /* Abstand zwischen den Galerieelementen */
+  justify-content: center; /* Zentriert die Galerieelemente */
+  border: none;
+  border-image-repeat: no-repeat;
+}
+
+.gallery-item {
+  text-align: center; /* Zentriert den Titel unter dem Bild */
+  border: none;
+  border-image-repeat: no-repeat;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr); /* 40 Spalten */
+  width: 240px; /* Breite des Bildbereichs */
+  height: 180px; /* Höhe des Bildbereichs */
+  gap: 0; /* Kein Abstand zwischen den Rasterelementen */
+  overflow: hidden; /* Überlaufende Inhalte verbergen */
+  background-color: transparent;
+  border-image-repeat: no-repeat;
+}
+
+.image-pixel {
+  width: 6px; /* Breite jedes Pixel */
+  height: 6px; /* Höhe jedes Pixel */
+  margin: 0; /* Sicherstellen, dass kein Margin vorhanden ist */
+  padding: 0; /* Sicherstellen, dass kein Padding vorhanden ist */
+  box-sizing: border-box; /* Box-Modell anpassen */
+  border: none;
+  background-color: transparent;
+}

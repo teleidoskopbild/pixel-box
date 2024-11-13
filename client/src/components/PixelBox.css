@@ -1,0 +1,48 @@
+.button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button.selected {
+  background-color: lightblue;
+  border-color: #36a82b;
+}
+
+.button:hover {
+  background-color: #1fa863;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(40, 20px);
+  grid-template-rows: repeat(30, 20px);
+  /* align-self: center; */
+
+  gap: 1px;
+  margin-bottom: 2rem;
+}
+
+.pixel {
+  width: 20px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

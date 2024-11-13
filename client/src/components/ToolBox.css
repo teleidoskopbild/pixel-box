@@ -1,0 +1,16 @@
+.toolbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.toolbox-button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.toolbox-button.active {
+  border: 2px solid #000;
+  border-color: rgb(53, 220, 6);
+}

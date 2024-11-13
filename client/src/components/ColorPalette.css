@@ -1,0 +1,37 @@
+.color-palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 265px;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.color-box:hover {
+  border: 2px solid #40ff00; /* Add a border on hover */
+}
+
+.selected-color {
+  width: 124px;
+  height: 124px;
+  margin: 5px;
+}
+
+.color-tools {
+  display: flex;
+  margin: 10px;
+}
+
+.custom-color-input {
+  cursor: pointer; /* Pointer cursor for better UX */
+  width: 124px;
+  height: 124px;
+  margin: 5px;
+  border-color: black;
+}
