@@ -1,4 +1,4 @@
-import "./Toolbox.css";
+import "./ToolBox.css";
 
 const Toolbox = ({ activeTool, setActiveTool }) => {
   return (

@@ -1,6 +1,6 @@
 import knex from "knex";
 
-const db = knex({
+const config = {
   client: "pg",
   connection: {
     host: process.env.POSTGRES_HOST,
@@ -8,10 +8,14 @@ const db = knex({
     user: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.POSTGRES_DATABASE,
-    ssl: process.env.POSTGRES_SSL === "true" && {
-      rejectUnauthorized: false,
-    },
+    // ssl: process.env.POSTGRES_SSL === "true" && {
+    //   rejectUnauthorized: false,
+    // },
+    ssl: { rejectUnauthorized: false },
   },
-});
+};
+console.log(config);
+
+const db = knex(config);
 
 export default db;
