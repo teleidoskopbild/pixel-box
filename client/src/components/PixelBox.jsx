@@ -8,6 +8,7 @@ import Minimap from "./Minimap.jsx";
 import SaveButton from "./SaveButton.jsx";
 import LoadButton from "./LoadButton";
 import UploadImage from "./UploadImage.jsx";
+import DownloadImage from "./DownloadImage.jsx";
 
 const PixelBox = ({ pixelColors, setPixelColors }) => {
   const { userInfo } = useContext(UserContext);
@@ -138,6 +139,7 @@ const PixelBox = ({ pixelColors, setPixelColors }) => {
       {/* <LoadPainting setPixelColors={setPixelColors} /> */}
       <LoadButton setPixelColors={setPixelColors} />
       <SaveButton pixelColors={pixelColors} />
+      <DownloadImage />
       <div className="grid-container">{renderGrid()}</div>{" "}
       {/* Render the pixel grid */}
     </div>

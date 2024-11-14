@@ -7,7 +7,7 @@ const Minimap = ({ pixelColors }) => {
   const pixelHeight = Math.floor(minimapHeight / 30); // Height of each pixel in minimap
 
   return (
-    <div className="minimap">
+    <div className="minimap" id="minimapCapture">
       {pixelColors.map((color, index) => (
         <div
           key={index}
